@@ -32,7 +32,6 @@ class UserTest < ActiveSupport::TestCase
 			
 			assert !user.save
 			assert !user.errors[:profile_name].empty?
-
 			assert user.errors[:profile_name].include?("Must be formated correctly")
 		end
 		
